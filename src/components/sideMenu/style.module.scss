@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+
+	.menu {
+		overflow: hidden;
+		width: 31.25rem;
+		height: 40.625rem;
+		background-color: $mainGreen;
+		border-radius: 2rem;
+		position: relative;
+	}
+}
