@@ -1,19 +1,15 @@
 @import '../../variables.scss';
 
 .outerWrapper {
-  max-width: 1800px;
   height: 100vh;
 
-  margin: 0 auto;
-  padding: 0 1rem;
-
-  display: flex;
-  flex-direction: column;
+  background-color: $black;
 
   .wrapper {
     height: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 1rem;
 
     display: flex;
     justify-content: center;
@@ -24,6 +20,7 @@
       align-self: center;
       font-size: 8rem;
       font-weight: 600;
+      color: $white;
 
       .mask {
         position: relative;
@@ -41,7 +38,7 @@
       flex-direction: column;
       gap: 2rem;
 
-      border-top: 2px solid $black;
+      border-top: 2px solid $white;
       align-self: flex-start;
 
       .linksContainer {
@@ -51,7 +48,7 @@
 
         a:link,
         a:visited {
-          color: $black;
+          color: $white;
           text-decoration: none;
         }
       }

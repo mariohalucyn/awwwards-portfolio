@@ -5,10 +5,13 @@
   align-items: center;
   justify-content: space-between;
 
-  border-top: 2px solid $black;
   padding: 3rem;
   transition: all 0.2s linear;
   cursor: pointer;
+
+  &:not(:first-child) {
+    border-top: 2px solid $black;
+  }
 
   h2,
   p {

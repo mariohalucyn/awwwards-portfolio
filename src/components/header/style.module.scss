@@ -1,9 +1,11 @@
 @import '../../variables.scss';
 
 .wrapper {
-	margin: 2rem 0;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem 0;
 
-	display: flex;
-	justify-content: space-between;
-	position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
