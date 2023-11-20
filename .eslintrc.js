@@ -12,5 +12,6 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'no-unused-vars': 'off',
     'no-undef': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
 };

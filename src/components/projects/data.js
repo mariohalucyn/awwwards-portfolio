@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'Locomotive',
     src: 'locomotive',
-    color: '#efe803',
+    color: '#efe8d3',
   },
   {
     title: 'Silencio',

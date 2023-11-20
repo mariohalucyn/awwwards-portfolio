@@ -10,17 +10,9 @@ function Projects() {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.projects}>
-        {projects.map(({ title }, index) => (
-          <Project
-            className={styles.project}
-            key={index}
-            index={index}
-            title={title}
-            setModal={setModal}
-          />
-        ))}
-      </div>
+      {projects.map(({ title }, index) => (
+        <Project key={index} index={index} title={title} setModal={setModal} />
+      ))}
       <Modal modal={modal} />
     </div>
   );

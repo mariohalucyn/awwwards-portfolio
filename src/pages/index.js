@@ -2,7 +2,6 @@ import * as React from 'react';
 import { useState, useRef, useEffect } from 'react';
 import '../main.scss';
 import Hero from '../components/hero';
-// import InfiniteSlider from '../components/infiniteSlider';
 import Projects from '../components/projects';
 
 function IndexPage() {
@@ -15,16 +14,15 @@ function IndexPage() {
         setIsMenuActive(false);
       }
     };
-    document.addEventListener('mousedown', handler);
+    window.addEventListener('mousedown', handler);
 
     return () => {
-      document.removeEventListener('mousedown', handler);
+      window.removeEventListener('mousedown', handler);
     };
   }, []);
 
   return (
     <>
-      {/* <InfiniteSlider /> */}
       <Hero menuRef={menuRef} isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
       <Projects />
     </>
