@@ -1,19 +1,14 @@
 @import '../../variables.scss';
 
 .outerWrapper {
-  max-width: 1800px;
   height: 100vh;
-
   margin: 0 auto;
-  padding: 0 1rem;
-
-  display: flex;
-  flex-direction: column;
 
   .wrapper {
     height: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 1rem;
 
     display: flex;
     justify-content: center;
@@ -24,6 +19,7 @@
       align-self: center;
       font-size: 8rem;
       font-weight: 600;
+      color: $black;
 
       .mask {
         position: relative;
