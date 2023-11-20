@@ -1,0 +1,32 @@
+@import '../../../variables.scss';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid $black;
+  padding: 3rem;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  h2, p {
+    transition: all 0.2s linear;
+  }
+
+  &:hover {
+    opacity: 0.5;
+
+    h2 {
+      transform: translateX(1rem);
+    }
+
+    p {
+      transform: translateX(-1rem);
+    }
+  }
+
+  h2 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+}

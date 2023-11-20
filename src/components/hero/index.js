@@ -13,15 +13,15 @@ function Hero({ isMenuActive, setIsMenuActive, menuRef }) {
     <div className={styles.outerWrapper}>
       <Header isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} menuRef={menuRef} />
       <div className={styles.wrapper}>
-        <p className={styles.heading}>
-          {heading.split(' ').map((item, i) => (
-            <span key={i} className={styles.mask}>
-              <motion.span custom={i} variants={variants} initial="initial" animate="animate">
+        <h1 className={styles.heading}>
+          {heading.split(' ').map((item, index) => (
+            <span key={index} className={styles.mask}>
+              <motion.span custom={index} variants={variants} initial="initial" animate="animate">
                 {item}
               </motion.span>
             </span>
           ))}
-        </p>
+        </h1>
         <div className={styles.description}>
           <div className={styles.linksContainer}>
             <a href="/">

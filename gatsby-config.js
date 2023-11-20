@@ -42,6 +42,14 @@ module.exports = {
       __key: 'images',
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'modal',
+        path: './src/assets/images/modal/',
+      },
+      __key: 'modal',
+    },
+    {
       resolve: 'gatsby-plugin-eslint',
       options: {
         // Gatsby required rules directory

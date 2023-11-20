@@ -2,7 +2,8 @@ import * as React from 'react';
 import { useState, useRef, useEffect } from 'react';
 import '../main.scss';
 import Hero from '../components/hero';
-import InfiniteSlider from '../components/infiniteSlider';
+// import InfiniteSlider from '../components/infiniteSlider';
+import Projects from '../components/projects';
 
 function IndexPage() {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -23,8 +24,9 @@ function IndexPage() {
 
   return (
     <>
-      <InfiniteSlider />
+      {/* <InfiniteSlider /> */}
       <Hero menuRef={menuRef} isMenuActive={isMenuActive} setIsMenuActive={setIsMenuActive} />
+      <Projects />
     </>
   );
 }

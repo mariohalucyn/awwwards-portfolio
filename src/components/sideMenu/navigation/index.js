@@ -8,10 +8,10 @@ function Navigation() {
   return (
     <div className={styles.navigation}>
       <div className={styles.body}>
-        {BodyLinks.map(({ title, href }, i) => (
-          <div key={`bodyLink_${i}`} className={styles.linkWrapper}>
+        {BodyLinks.map(({ title, href }, index) => (
+          <div key={`bodyLink_${index}`} className={styles.linkWrapper}>
             <motion.div
-              custom={i}
+              custom={index}
               variants={perspective}
               initial="initial"
               animate="enter"
@@ -24,10 +24,10 @@ function Navigation() {
       </div>
 
       <div className={styles.footer}>
-        {FooterLinks.map(({ title, href }, i) => (
+        {FooterLinks.map(({ title, href }, index) => (
           <motion.div
-            key={`footerLink_${i}`}
-            custom={i}
+            key={`footerLink_${index}`}
+            custom={index}
             variants={slide}
             initial="initial"
             animate="enter"
